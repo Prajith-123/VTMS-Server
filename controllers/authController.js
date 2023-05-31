@@ -117,7 +117,8 @@ const recoverPassword = async (req, res) => {
     });
 
     // Prepare email options
-    const link = `http://localhost:3000/reset-password/${resetToken}`;
+    // const link = `http://localhost:3000/reset-password/${resetToken}`;
+    const link = `https://track-d6on.onrender.com/reset-password/${resetToken}`;
     const mailOptions = {
       from: 'kumarprajith944@gmail.com',
       to: user.email,
